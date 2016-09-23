@@ -19,6 +19,7 @@ public:
     int randomGenerator(int begin, int end);
     string randomString();
     void randomVector(int size);
+
 };
 
 

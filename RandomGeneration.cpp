@@ -7,8 +7,7 @@
 RandomGeneration::RandomGeneration() {}
 
 int RandomGeneration::randomGenerator(int begin, int end) {
-    int random = rand() % end + begin; //number between begin and end
-    return random;
+    return rand() % end + begin; //number between begin and end
 }
 string RandomGeneration::randomString() {
     int size = randomGenerator(1,4);

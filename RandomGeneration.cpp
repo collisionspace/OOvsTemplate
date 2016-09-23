@@ -21,3 +21,10 @@ string RandomGeneration::randomString() {
     }
     return randomString;
 }
+
+void RandomGeneration::randomVector(int size) {
+    std::vector<string> stringVectors(size);
+    for(int i = 0; i < size; i++) {
+        stringVectors[i] = randomString();
+    }
+}

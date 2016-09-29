@@ -12,8 +12,6 @@ int RandomGeneration::randomGenerator(int begin, int end) {
 string RandomGeneration::randomString() {
     int size = randomGenerator(1,4);
     string randomString = "";
-    char cAlphabet[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-
     for(int i = 0; i < size; i++) {
         int randomChar = randomGenerator(0,25);
         randomString += cAlphabet[randomChar];
@@ -22,8 +20,8 @@ string RandomGeneration::randomString() {
 }
 
 void RandomGeneration::randomVector(int size) {
-    std::vector<string> stringVectors(size);
+    std::vector<string> randomStrings(size);
     for(int i = 0; i < size; i++) {
-        stringVectors[i] = randomString();
+        randomStrings[i] = randomString();
     }
 }

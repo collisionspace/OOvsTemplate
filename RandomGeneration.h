@@ -15,7 +15,7 @@ using namespace std;
 class RandomGeneration {
 public:
     RandomGeneration();
-
+    const char cAlphabet[26] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
     int randomGenerator(int begin, int end);
     string randomString();
     void randomVector(int size);

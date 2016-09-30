@@ -10,9 +10,8 @@
 class IntComparison : public IComparable {
 public:
     IntComparison(int wrappedInt);
-    virtual bool isLessThan(IComparable *compareTo) override;
-    virtual int getInt() override;
-    virtual string getString() override;
+    virtual bool isLessThan(IComparable *compareTo);
+    virtual int getInt();
 
 private:
     int wrappedInt;

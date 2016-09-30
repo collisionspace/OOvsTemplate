@@ -19,9 +19,17 @@ string RandomGeneration::randomString() {
     return randomString;
 }
 
-void RandomGeneration::randomVector(int size) {
+vector<string> RandomGeneration::randomStringVector(int size) {
     std::vector<string> randomStrings(size);
     for(int i = 0; i < size; i++) {
         randomStrings[i] = randomString();
     }
+    return randomStrings;
+}
+vector<IComparable*> RandomGeneration::randomIntVector(int size) {
+    std::vector<IComparable*> randomInts(size);
+    for(int i = 0; i < size; i++) {
+        randomInts[i] = new IntComparison(randomGenerator(0,1000));
+    }
+    return randomInts;
 }

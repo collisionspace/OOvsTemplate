@@ -7,14 +7,10 @@
 IntComparison::IntComparison(int wrappedInt) : wrappedInt(wrappedInt) {}
 
 bool IntComparison::isLessThan(IComparable *compareTo) {
-    return wrappedInt < compareTo->getInt();
+    IntComparison* rhs = dynamic_cast<IntComparison*>(compareTo);
+    return wrappedInt < rhs->getInt();
 }
 
 int IntComparison::getInt() {
     return wrappedInt;
 }
-
-string IntComparison::getString() {
-    return nullptr;
-}
-

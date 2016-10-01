@@ -9,8 +9,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
-#include "IntComparison.h"
-
+#include "IntWrapper.h"
+#include "StringWrapper.h"
 using namespace std;
 
 class RandomGeneration {
@@ -19,7 +19,7 @@ public:
     const char cAlphabet[26] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
     int randomGenerator(int begin, int end);
     string randomString();
-    vector<string> randomStringVector(int size);
+    vector<IComparable*> randomStringVector(int size);
     vector<IComparable*> randomIntVector(int size);
 };
 

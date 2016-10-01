@@ -9,6 +9,7 @@ RandomGeneration::RandomGeneration() {}
 int RandomGeneration::randomGenerator(int begin, int end) {
     return rand() % end + begin; //number between begin and end
 }
+
 string RandomGeneration::randomString() {
     int size = randomGenerator(1,4);
     string randomString = "";
@@ -19,17 +20,17 @@ string RandomGeneration::randomString() {
     return randomString;
 }
 
-vector<string> RandomGeneration::randomStringVector(int size) {
-    std::vector<string> randomStrings(size);
+vector<IComparable*> RandomGeneration::randomStringVector(int size) {
+    std::vector<IComparable*> randomStrings(size);
     for(int i = 0; i < size; i++) {
-        randomStrings[i] = randomString();
+        randomStrings[i] = new StringWrapper(randomString());
     }
     return randomStrings;
 }
 vector<IComparable*> RandomGeneration::randomIntVector(int size) {
     std::vector<IComparable*> randomInts(size);
     for(int i = 0; i < size; i++) {
-        randomInts[i] = new IntComparison(randomGenerator(0,1000));
+        randomInts[i] = new IntWrapper(randomGenerator(0,1000));
     }
     return randomInts;
 }

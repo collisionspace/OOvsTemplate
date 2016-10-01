@@ -12,7 +12,9 @@
 class Sort {
 
 public:
-    vector<IComparable*> sortInt(vector<IComparable*>);
+    static vector<IComparable*> sortInt(vector<IComparable*>);
+    static vector<IComparable*> sortString(vector<IComparable*>);
+    static bool sortVerify(vector<IComparable*>);
 };
 
 

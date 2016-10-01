@@ -7,9 +7,9 @@
 
 #include "IComparable.h"
 
-class IntComparison : public IComparable {
+class IntWrapper : public IComparable {
 public:
-    IntComparison(int wrappedInt);
+    IntWrapper(int wrappedInt);
     virtual bool isLessThan(IComparable *compareTo);
     virtual int getInt();
 

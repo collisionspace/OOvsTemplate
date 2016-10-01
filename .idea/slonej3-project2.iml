@@ -2,15 +2,17 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/IntWrapper.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IComparable.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/IntWrapper.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IntComparison.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/IComparable.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/IntComparison.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/RandomGeneration.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StringWrapper.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StringWrapper.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sort.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Sort.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sort.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RandomGeneration.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RandomGeneration.cpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

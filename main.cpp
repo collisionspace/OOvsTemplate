@@ -5,7 +5,7 @@ int main() {
     RandomGeneration rand = RandomGeneration();
     srand(time(NULL));
 
-    vector<int> sizeVectors({1000,1000,1000,10000,10000,10000,100000,100000,100000});
+    vector<int> sizeVectors({100,100,100,1000,1000,1000,10000,10000,10000,100000,100000,100000});
     for(int i = 0; i < sizeVectors.size(); i++) {
         vector<IComparable *> randomInts = rand.randomIntVector(sizeVectors[i]);
         vector<IComparable *> sortInt = Sort::sortInt(randomInts);

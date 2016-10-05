@@ -27,6 +27,7 @@ vector<IComparable*> RandomGeneration::randomStringComparableVector(int size) {
     }
     return randomStrings;
 }
+
 vector<IComparable*> RandomGeneration::randomIntComparableVector(int size) {
     std::vector<IComparable*> randomInts(size);
     for(int i = 0; i < size; i++) {
@@ -42,6 +43,7 @@ vector<string> RandomGeneration::randomStringVector(int size) {
     }
     return randomStrings;
 }
+
 vector<int> RandomGeneration::randomIntVector(int size) {
     std::vector<int> randomInts(size);
     for(int i = 0; i < size; i++) {

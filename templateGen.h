@@ -10,13 +10,7 @@ using namespace std;
 
 template <class T> class templateGen {
 public:
-
-    templateGen(const vector<T> & v) : v(v) {}
-    void sort(vector<T> &v);
-
-private:
-    vector<T> v;
-
+    static vector<T> sort(vector<T>);
 };
 
 #endif //SLONEJ3_PROJECT2_TEMPLATE_H

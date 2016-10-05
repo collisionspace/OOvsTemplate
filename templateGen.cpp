@@ -4,7 +4,8 @@
 
 #include "templateGen.h"
 
-template <class T> void templateGen<T>::sort(vector<T> &v) {
+template <class T>
+static vector<T> sort(vector<T> v) {
     //clock_t t = clock();
     if(v.size() > 1) {
         for (int i = 1; i < v.size(); ++i) {
@@ -19,7 +20,7 @@ template <class T> void templateGen<T>::sort(vector<T> &v) {
     }
     //t = clock() - t;
     //cout << "\nIt took " << (((float)t)/CLOCKS_PER_SEC) << " seconds to sort this vector" << endl;
-   // return v;
+    return v;
 }
 
 

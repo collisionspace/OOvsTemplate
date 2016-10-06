@@ -14,3 +14,7 @@ bool IntWrapper::isLessThan(IComparable *compareTo) {
 int IntWrapper::getInt() {
     return wrappedInt;
 }
+
+bool IntWrapper::operator<(const IntWrapper &rhs) const {
+    return wrappedInt < rhs.wrappedInt;
+}

@@ -13,6 +13,8 @@ public:
     virtual bool isLessThan(IComparable *compareTo);
     virtual int getInt();
 
+    bool operator<(const IntWrapper &rhs) const;
+
 private:
     int wrappedInt;
 

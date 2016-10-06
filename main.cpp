@@ -39,7 +39,6 @@ int main() {
     srand(time(NULL));
     vector<int> sizeVectors({100,100,100,1000,1000,1000,10000,10000,10000,100000,100000,100000});
 
-
     cout << "OO Wrapper Functions\n\n" << endl;
     for(int i = 0; i < sizeVectors.size(); i++) {
         vector<IComparable *> randomInts = rand.randomIntComparableVector(sizeVectors[i]);

@@ -36,6 +36,14 @@ vector<IComparable*> RandomGeneration::randomIntComparableVector(int size) {
     return randomInts;
 }
 
+void RandomGeneration::randomIntWrapperGenericVector(vector<IntWrapper*> *randomInts, int size) {
+    //std::vector<IntWrapper*> randomInts(size);
+    for(int i = 0; i < size; i++) {
+        IntWrapper *tWrap = new IntWrapper(randomGenerator(0,1000));
+        randomInts->push_back(tWrap);
+    }
+}
+
 vector<string> RandomGeneration::randomStringVector(int size) {
     std::vector<string> randomStrings(size);
     for(int i = 0; i < size; i++) {

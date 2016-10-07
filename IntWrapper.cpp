@@ -18,3 +18,6 @@ int IntWrapper::getInt() {
 bool IntWrapper::operator<(const IntWrapper &rhs) const {
     return wrappedInt < rhs.wrappedInt;
 }
+bool IntWrapper::operator>(const IntWrapper &rhs) const {
+    return wrappedInt > rhs.wrappedInt;
+}

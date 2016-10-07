@@ -14,6 +14,7 @@ public:
     virtual int getInt();
 
     bool operator<(const IntWrapper &rhs) const;
+    bool operator>(const IntWrapper &rhs) const;
 
 private:
     int wrappedInt;

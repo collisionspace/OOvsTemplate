@@ -21,6 +21,7 @@ public:
     string randomString();
     vector<IComparable*> randomStringComparableVector(int size);
     vector<IComparable*> randomIntComparableVector(int size);
+    void randomIntWrapperGenericVector(vector<IntWrapper*> *randomInts, int size);
     vector<string> randomStringVector(int size);
     vector<int> randomIntVector(int size);
 };

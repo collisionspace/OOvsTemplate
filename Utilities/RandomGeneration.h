@@ -19,10 +19,10 @@ public:
     const char cAlphabet[26] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
     int randomGenerator(int begin, int end);
     string randomString();
-    vector<IComparable*> randomStringComparableVector(int size);
-    vector<IComparable*> randomIntComparableVector(int size);
-    void randomIntWrapperGenericVector(vector<IntWrapper*> *randomInts, int size);
-    void randomStringWrapperGenericVector(vector<StringWrapper*> *randomStr, int size);
+    vector<IComparable*> randomStringComparableVector(unsigned long size);
+    vector<IComparable*> randomIntComparableVector(unsigned long size);
+    void randomIntWrapperGenericVector(vector<IntWrapper*> *randomInts, unsigned long size);
+    void randomStringWrapperGenericVector(vector<StringWrapper*> *randomStr, unsigned long size);
 };
 
 

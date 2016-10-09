@@ -20,7 +20,7 @@ string RandomGeneration::randomString() {
     return randomString;
 }
 
-vector<IComparable*> RandomGeneration::randomStringComparableVector(int size) {
+vector<IComparable*> RandomGeneration::randomStringComparableVector(unsigned long size) {
     std::vector<IComparable*> randomStrings(size);
     for(int i = 0; i < size; i++) {
         randomStrings[i] = new StringWrapper(randomString());
@@ -28,7 +28,7 @@ vector<IComparable*> RandomGeneration::randomStringComparableVector(int size) {
     return randomStrings;
 }
 
-vector<IComparable*> RandomGeneration::randomIntComparableVector(int size) {
+vector<IComparable*> RandomGeneration::randomIntComparableVector(unsigned long size) {
     std::vector<IComparable*> randomInts(size);
     for(int i = 0; i < size; i++) {
         randomInts[i] = new IntWrapper(randomGenerator(0,1000));
@@ -36,16 +36,14 @@ vector<IComparable*> RandomGeneration::randomIntComparableVector(int size) {
     return randomInts;
 }
 
-void RandomGeneration::randomIntWrapperGenericVector(vector<IntWrapper*> *randomInts, int size) {
-    //std::vector<IntWrapper*> randomInts(size);
+void RandomGeneration::randomIntWrapperGenericVector(vector<IntWrapper*> *randomInts, unsigned long size) {
     for(int i = 0; i < size; i++) {
         IntWrapper *tWrap = new IntWrapper(randomGenerator(0,1000));
         randomInts->push_back(tWrap);
     }
 }
 
-void RandomGeneration::randomStringWrapperGenericVector(vector<StringWrapper*> *randomStr, int size) {
-    //std::vector<IntWrapper*> randomInts(size);
+void RandomGeneration::randomStringWrapperGenericVector(vector<StringWrapper*> *randomStr, unsigned long size) {
     for(int i = 0; i < size; i++) {
         StringWrapper *randStr = new StringWrapper(randomString());
         randomStr->push_back(randStr);

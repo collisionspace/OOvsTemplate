@@ -44,18 +44,24 @@ void RandomGeneration::randomIntWrapperGenericVector(vector<IntWrapper*> *random
     }
 }
 
-vector<string> RandomGeneration::randomStringVector(int size) {
-    std::vector<string> randomStrings(size);
+void RandomGeneration::randomStringWrapperGenericVector(vector<StringWrapper*> *randomStr, int size) {
+    //std::vector<IntWrapper*> randomInts(size);
     for(int i = 0; i < size; i++) {
-        randomStrings[i] = randomString();
+        StringWrapper *randStr = new StringWrapper(randomString());
+        randomStr->push_back(randStr);
     }
-    return randomStrings;
 }
 
-vector<int> RandomGeneration::randomIntVector(int size) {
-    std::vector<int> randomInts(size);
+void RandomGeneration::randomStringVector(vector<string*> *randomStrings, int size) {
     for(int i = 0; i < size; i++) {
-        randomInts[i] = randomGenerator(0,1000);
+        string randStr = randomString();
+        randomStrings->push_back(&randStr);
     }
-    return randomInts;
+}
+
+void RandomGeneration::randomIntVector(vector<int*> *randomInts, int size) {
+    for(int i = 0; i < size; i++) {
+        int randInt = randomGenerator(0,1000);
+        randomInts->push_back(&randInt);
+    }
 }

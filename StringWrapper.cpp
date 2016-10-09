@@ -14,3 +14,14 @@ bool StringWrapper::isLessThan(IComparable *compareTo) {
 string StringWrapper::getString() {
     return wrappedString;
 }
+
+
+bool StringWrapper::operator<(const StringWrapper &rhs) const {
+    return wrappedString < rhs.wrappedString;
+}
+bool StringWrapper::operator>(const StringWrapper &rhs) const {
+    return wrappedString > rhs.wrappedString;
+}
+bool StringWrapper::operator!=(const StringWrapper &rhs) const {
+    return wrappedString != rhs.wrappedString;
+}

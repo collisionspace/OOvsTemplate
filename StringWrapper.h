@@ -14,6 +14,11 @@ public:
     virtual bool isLessThan(IComparable *compareTo);
     virtual string getString();
 
+
+    bool operator<(const StringWrapper &rhs) const;
+    bool operator>(const StringWrapper &rhs) const;
+    bool operator!=(const StringWrapper &rhs) const;
+
 private:
     string wrappedString;
 };

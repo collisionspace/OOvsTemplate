@@ -15,6 +15,7 @@ public:
 
     bool operator<(const IntWrapper &rhs) const;
     bool operator>(const IntWrapper &rhs) const;
+    bool operator!=(const IntWrapper &rhs) const;
 
 private:
     int wrappedInt;

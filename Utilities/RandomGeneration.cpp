@@ -51,17 +51,3 @@ void RandomGeneration::randomStringWrapperGenericVector(vector<StringWrapper*> *
         randomStr->push_back(randStr);
     }
 }
-
-void RandomGeneration::randomStringVector(vector<string*> *randomStrings, int size) {
-    for(int i = 0; i < size; i++) {
-        string randStr = randomString();
-        randomStrings->push_back(&randStr);
-    }
-}
-
-void RandomGeneration::randomIntVector(vector<int*> *randomInts, int size) {
-    for(int i = 0; i < size; i++) {
-        int randInt = randomGenerator(0,1000);
-        randomInts->push_back(&randInt);
-    }
-}

@@ -5,7 +5,7 @@
 #ifndef SLONEJ3_PROJECT2_STRINGWRAPPER_H
 #define SLONEJ3_PROJECT2_STRINGWRAPPER_H
 
-#include "IComparable.h"
+#include "../Interfaces/IComparable.h"
 
 
 class StringWrapper : public IComparable {

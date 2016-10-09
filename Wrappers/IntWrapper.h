@@ -5,7 +5,7 @@
 #ifndef SLONEJ3_PROJECT2_INTCOMPARISON_H
 #define SLONEJ3_PROJECT2_INTCOMPARISON_H
 
-#include "IComparable.h"
+#include "../Interfaces/IComparable.h"
 
 class IntWrapper : public IComparable {
 public:

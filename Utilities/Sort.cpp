@@ -3,8 +3,8 @@
 //
 
 #include "Sort.h"
-#include "IntWrapper.h"
-#include "StringWrapper.h"
+#include "../Wrappers/IntWrapper.h"
+#include "../Wrappers/StringWrapper.h"
 #include <time.h>
 #include <iostream>
 

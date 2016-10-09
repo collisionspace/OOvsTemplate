@@ -7,7 +7,7 @@
 
 
 #include <vector>
-#include "IComparable.h"
+#include "../Interfaces/IComparable.h"
 
 class Sort {
 

@@ -9,8 +9,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <vector>
-#include "IntWrapper.h"
-#include "StringWrapper.h"
+#include "../Wrappers/IntWrapper.h"
+#include "../Wrappers/StringWrapper.h"
 using namespace std;
 
 class RandomGeneration {
@@ -23,8 +23,6 @@ public:
     vector<IComparable*> randomIntComparableVector(int size);
     void randomIntWrapperGenericVector(vector<IntWrapper*> *randomInts, int size);
     void randomStringWrapperGenericVector(vector<StringWrapper*> *randomStr, int size);
-    void randomStringVector(vector<string*> *randomStrings, int size);
-    void randomIntVector(vector<int*> *randomInts, int size);
 };
 
 
